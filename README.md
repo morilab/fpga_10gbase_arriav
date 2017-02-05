@@ -1,1 +1,2 @@
-# fpga_10gbase_arriav
+# 10G-BASE-R sample of ArriaV GT development board
+
