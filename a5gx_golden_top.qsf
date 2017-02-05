@@ -1,0 +1,1948 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 11.1 Internal Build 107 07/11/2011 SJ Full Version
+# Date created = 11:56:20  July 19, 2011
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#                       
+# 1) The default values for assignments are stored in the file:
+#		a5gx_golden_top_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Arria V"
+set_global_assignment -name DEVICE 5AGTFD7K3F40I5ES
+set_global_assignment -name TOP_LEVEL_ENTITY a5gx_golden_top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 11.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:56:20  JULY 19, 2011"
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Standard Edition"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 1517
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+set_location_assignment PIN_H25 -to ddr3a_a[1]
+set_location_assignment PIN_J28 -to ddr3a_a[10]
+set_location_assignment PIN_M21 -to ddr3a_a[11]
+set_location_assignment PIN_G28 -to ddr3a_a[12]
+set_location_assignment PIN_M31 -to ddr3a_a[13]
+set_location_assignment PIN_F32 -to ddr3a_a[2]
+set_location_assignment PIN_P28 -to ddr3a_a[3]
+set_location_assignment PIN_L24 -to ddr3a_a[4]
+set_location_assignment PIN_G32 -to ddr3a_a[5]
+set_location_assignment PIN_R21 -to ddr3a_a[6]
+set_location_assignment PIN_K30 -to ddr3a_a[7]
+set_location_assignment PIN_D21 -to ddr3a_a[8]
+set_location_assignment PIN_M30 -to ddr3a_a[9]
+set_location_assignment PIN_G30 -to ddr3a_ba[0]
+set_location_assignment PIN_T24 -to ddr3a_ba[1]
+set_location_assignment PIN_K34 -to ddr3a_ba[2]
+set_location_assignment PIN_D32 -to ddr3a_casn
+set_location_assignment PIN_K29 -to ddr3a_cke
+set_location_assignment PIN_F34 -to ddr3a_clk_n
+set_location_assignment PIN_E34 -to ddr3a_clk_p
+set_location_assignment PIN_F31 -to ddr3a_csn
+set_location_assignment PIN_M32 -to ddr3a_dm[0]
+set_location_assignment PIN_D31 -to ddr3a_dm[1]
+set_location_assignment PIN_D29 -to ddr3a_dm[2]
+set_location_assignment PIN_H28 -to ddr3a_dm[3]
+set_location_assignment PIN_E27 -to ddr3a_dm[4]
+set_location_assignment PIN_A26 -to ddr3a_dm[5]
+set_location_assignment PIN_P24 -to ddr3a_dm[6]
+set_location_assignment PIN_B24 -to ddr3a_dm[7]
+set_location_assignment PIN_P22 -to ddr3a_dm[8]
+set_location_assignment PIN_N33 -to ddr3a_dq[0]
+set_location_assignment PIN_N31 -to ddr3a_dq[1]
+set_location_assignment PIN_B30 -to ddr3a_dq[10]
+set_location_assignment PIN_H31 -to ddr3a_dq[11]
+set_location_assignment PIN_B31 -to ddr3a_dq[12]
+set_location_assignment PIN_E31 -to ddr3a_dq[13]
+set_location_assignment PIN_A31 -to ddr3a_dq[14]
+set_location_assignment PIN_C31 -to ddr3a_dq[15]
+set_location_assignment PIN_D30 -to ddr3a_dq[16]
+set_location_assignment PIN_C29 -to ddr3a_dq[17]
+set_location_assignment PIN_R30 -to ddr3a_dq[18]
+set_location_assignment PIN_A29 -to ddr3a_dq[19]
+set_location_assignment PIN_N34 -to ddr3a_dq[2]
+set_location_assignment PIN_L30 -to ddr3a_dq[20]
+set_location_assignment PIN_A28 -to ddr3a_dq[21]
+set_location_assignment PIN_J30 -to ddr3a_dq[22]
+set_location_assignment PIN_B28 -to ddr3a_dq[23]
+set_location_assignment PIN_J29 -to ddr3a_dq[24]
+set_location_assignment PIN_C28 -to ddr3a_dq[25]
+set_location_assignment PIN_L28 -to ddr3a_dq[26]
+set_location_assignment PIN_F28 -to ddr3a_dq[27]
+set_location_assignment PIN_N29 -to ddr3a_dq[28]
+set_location_assignment PIN_D28 -to ddr3a_dq[29]
+set_location_assignment PIN_L31 -to ddr3a_dq[3]
+set_location_assignment PIN_M29 -to ddr3a_dq[30]
+set_location_assignment PIN_M28 -to ddr3a_dq[31]
+set_location_assignment PIN_P27 -to ddr3a_dq[32]
+set_location_assignment PIN_B27 -to ddr3a_dq[33]
+set_location_assignment PIN_R27 -to ddr3a_dq[34]
+set_location_assignment PIN_C27 -to ddr3a_dq[35]
+set_location_assignment PIN_M27 -to ddr3a_dq[36]
+set_location_assignment PIN_H27 -to ddr3a_dq[37]
+set_location_assignment PIN_N27 -to ddr3a_dq[38]
+set_location_assignment PIN_K27 -to ddr3a_dq[39]
+set_location_assignment PIN_N32 -to ddr3a_dq[4]
+set_location_assignment PIN_J26 -to ddr3a_dq[40]
+set_location_assignment PIN_D26 -to ddr3a_dq[41]
+set_location_assignment PIN_K25 -to ddr3a_dq[42]
+set_location_assignment PIN_G26 -to ddr3a_dq[43]
+set_location_assignment PIN_T27 -to ddr3a_dq[44]
+set_location_assignment PIN_F26 -to ddr3a_dq[45]
+set_location_assignment PIN_R26 -to ddr3a_dq[46]
+set_location_assignment PIN_C26 -to ddr3a_dq[47]
+set_location_assignment PIN_T26 -to ddr3a_dq[48]
+set_location_assignment PIN_R24 -to ddr3a_dq[49]
+set_location_assignment PIN_J34 -to ddr3a_dq[5]
+set_location_assignment PIN_D25 -to ddr3a_dq[50]
+set_location_assignment PIN_T25 -to ddr3a_dq[51]
+set_location_assignment PIN_E25 -to ddr3a_dq[52]
+set_location_assignment PIN_N24 -to ddr3a_dq[53]
+set_location_assignment PIN_G25 -to ddr3a_dq[54]
+set_location_assignment PIN_K24 -to ddr3a_dq[55]
+set_location_assignment PIN_F23 -to ddr3a_dq[56]
+set_location_assignment PIN_J23 -to ddr3a_dq[57]
+set_location_assignment PIN_G23 -to ddr3a_dq[58]
+set_location_assignment PIN_C24 -to ddr3a_dq[59]
+set_location_assignment PIN_P31 -to ddr3a_dq[6]
+set_location_assignment PIN_F24 -to ddr3a_dq[60]
+set_location_assignment PIN_R23 -to ddr3a_dq[61]
+set_location_assignment PIN_G24 -to ddr3a_dq[62]
+set_location_assignment PIN_M23 -to ddr3a_dq[63]
+set_location_assignment PIN_B22 -to ddr3a_dq[64]
+set_location_assignment PIN_L22 -to ddr3a_dq[65]
+set_location_assignment PIN_C22 -to ddr3a_dq[66]
+set_location_assignment PIN_N22 -to ddr3a_dq[67]
+set_location_assignment PIN_E22 -to ddr3a_dq[68]
+set_location_assignment PIN_J22 -to ddr3a_dq[69]
+set_location_assignment PIN_J32 -to ddr3a_dq[7]
+set_location_assignment PIN_A23 -to ddr3a_dq[70]
+set_location_assignment PIN_F22 -to ddr3a_dq[71]
+set_location_assignment PIN_A30 -to ddr3a_dq[8]
+set_location_assignment PIN_C30 -to ddr3a_dq[9]
+set_location_assignment PIN_M33 -to ddr3a_dqs_n[0]
+set_location_assignment PIN_B33 -to ddr3a_dqs_n[1]
+set_location_assignment PIN_P30 -to ddr3a_dqs_n[2]
+set_location_assignment PIN_T29 -to ddr3a_dqs_n[3]
+set_location_assignment PIN_T28 -to ddr3a_dqs_n[4]
+set_location_assignment PIN_N26 -to ddr3a_dqs_n[5]
+set_location_assignment PIN_B25 -to ddr3a_dqs_n[6]
+set_location_assignment PIN_E24 -to ddr3a_dqs_n[7]
+set_location_assignment PIN_D23 -to ddr3a_dqs_n[8]
+set_location_assignment PIN_L33 -to ddr3a_dqs_p[0]
+set_location_assignment PIN_A33 -to ddr3a_dqs_p[1]
+set_location_assignment PIN_N30 -to ddr3a_dqs_p[2]
+set_location_assignment PIN_R29 -to ddr3a_dqs_p[3]
+set_location_assignment PIN_R28 -to ddr3a_dqs_p[4]
+set_location_assignment PIN_M26 -to ddr3a_dqs_p[5]
+set_location_assignment PIN_A25 -to ddr3a_dqs_p[6]
+set_location_assignment PIN_D24 -to ddr3a_dqs_p[7]
+set_location_assignment PIN_C23 -to ddr3a_dqs_p[8]
+set_location_assignment PIN_E33 -to ddr3a_odt
+set_location_assignment PIN_A32 -to ddr3a_rasn
+set_location_assignment PIN_J31 -to ddr3a_resetn
+set_location_assignment PIN_G29 -to ddr3a_wen
+set_location_assignment PIN_M34 -to ddr3a_a[0]
+
+set_location_assignment PIN_AB29 -to qdrii_a[0]
+set_location_assignment PIN_AC29 -to qdrii_a[1]
+set_location_assignment PIN_AJ27 -to qdrii_a[10]
+set_location_assignment PIN_AP27 -to qdrii_a[11]
+set_location_assignment PIN_AM27 -to qdrii_a[12]
+set_location_assignment PIN_AG27 -to qdrii_a[13]
+set_location_assignment PIN_AE27 -to qdrii_a[14]
+set_location_assignment PIN_AC24 -to qdrii_a[15]
+set_location_assignment PIN_AD26 -to qdrii_a[16]
+set_location_assignment PIN_AN26 -to qdrii_a[17]
+set_location_assignment PIN_AF28 -to qdrii_a[2]
+set_location_assignment PIN_AG28 -to qdrii_a[3]
+set_location_assignment PIN_AK29 -to qdrii_a[4]
+set_location_assignment PIN_AL29 -to qdrii_a[5]
+set_location_assignment PIN_AH28 -to qdrii_a[6]
+set_location_assignment PIN_AJ28 -to qdrii_a[7]
+set_location_assignment PIN_AD28 -to qdrii_a[8]
+set_location_assignment PIN_AP28 -to qdrii_a[9]
+set_location_assignment PIN_AK27 -to qdrii_bwsn[0]
+set_location_assignment PIN_AB25 -to qdrii_bwsn[1]
+set_location_assignment PIN_AM25 -to qdrii_bwsn[2]
+set_location_assignment PIN_AV24 -to qdrii_bwsn[3]
+set_location_assignment PIN_AT21 -to qdrii_cq_p
+set_location_assignment PIN_AE28 -to qdrii_d[0]
+set_location_assignment PIN_AB27 -to qdrii_d[1]
+set_location_assignment PIN_AW28 -to qdrii_d[10]
+set_location_assignment PIN_AR27 -to qdrii_d[11]
+set_location_assignment PIN_AT27 -to qdrii_d[12]
+set_location_assignment PIN_AU27 -to qdrii_d[13]
+set_location_assignment PIN_AN27 -to qdrii_d[14]
+set_location_assignment PIN_AV27 -to qdrii_d[15]
+set_location_assignment PIN_AW27 -to qdrii_d[16]
+set_location_assignment PIN_AH27 -to qdrii_d[17]
+set_location_assignment PIN_AC25 -to qdrii_d[18]
+set_location_assignment PIN_AF27 -to qdrii_d[19]
+set_location_assignment PIN_AB28 -to qdrii_d[2]
+set_location_assignment PIN_AD25 -to qdrii_d[20]
+set_location_assignment PIN_AG26 -to qdrii_d[21]
+set_location_assignment PIN_AH26 -to qdrii_d[22]
+set_location_assignment PIN_AE26 -to qdrii_d[23]
+set_location_assignment PIN_AG25 -to qdrii_d[24]
+set_location_assignment PIN_AH25 -to qdrii_d[25]
+set_location_assignment PIN_AP26 -to qdrii_d[26]
+set_location_assignment PIN_AN25 -to qdrii_d[27]
+set_location_assignment PIN_AK25 -to qdrii_d[28]
+set_location_assignment PIN_AT26 -to qdrii_d[29]
+set_location_assignment PIN_AM28 -to qdrii_d[3]
+set_location_assignment PIN_AU26 -to qdrii_d[30]
+set_location_assignment PIN_AT25 -to qdrii_d[31]
+set_location_assignment PIN_AW25 -to qdrii_d[32]
+set_location_assignment PIN_AW26 -to qdrii_d[33]
+set_location_assignment PIN_AL26 -to qdrii_d[34]
+set_location_assignment PIN_AC27 -to qdrii_d[4]
+set_location_assignment PIN_AD27 -to qdrii_d[5]
+set_location_assignment PIN_AR28 -to qdrii_d[6]
+set_location_assignment PIN_AU28 -to qdrii_d[7]
+set_location_assignment PIN_AV28 -to qdrii_d[8]
+set_location_assignment PIN_AW29 -to qdrii_d[9]
+set_location_assignment PIN_AN24 -to qdrii_doffn
+set_location_assignment PIN_AE25 -to qdrii_k_n
+set_location_assignment PIN_AG24 -to qdrii_odt
+set_location_assignment PIN_AD24 -to qdrii_q[0]
+set_location_assignment PIN_AT24 -to qdrii_q[1]
+set_location_assignment PIN_AT23 -to qdrii_q[10]
+set_location_assignment PIN_AU23 -to qdrii_q[11]
+set_location_assignment PIN_AP23 -to qdrii_q[12]
+set_location_assignment PIN_AD22 -to qdrii_q[13]
+set_location_assignment PIN_AE23 -to qdrii_q[14]
+set_location_assignment PIN_AL23 -to qdrii_q[15]
+set_location_assignment PIN_AT22 -to qdrii_q[16]
+set_location_assignment PIN_AU22 -to qdrii_q[17]
+set_location_assignment PIN_AW22 -to qdrii_q[18]
+set_location_assignment PIN_AV21 -to qdrii_q[19]
+set_location_assignment PIN_AU24 -to qdrii_q[2]
+set_location_assignment PIN_AW21 -to qdrii_q[20]
+set_location_assignment PIN_AH23 -to qdrii_q[21]
+set_location_assignment PIN_AE22 -to qdrii_q[22]
+set_location_assignment PIN_AF22 -to qdrii_q[23]
+set_location_assignment PIN_AP22 -to qdrii_q[24]
+set_location_assignment PIN_AW20 -to qdrii_q[26]
+set_location_assignment PIN_AH22 -to qdrii_q[27]
+set_location_assignment PIN_AT20 -to qdrii_q[28]
+set_location_assignment PIN_AU20 -to qdrii_q[29]
+set_location_assignment PIN_AL24 -to qdrii_q[3]
+set_location_assignment PIN_AK21 -to qdrii_q[30]
+set_location_assignment PIN_AU19 -to qdrii_q[31]
+set_location_assignment PIN_AV19 -to qdrii_q[32]
+set_location_assignment PIN_AN21 -to qdrii_q[33]
+set_location_assignment PIN_AE21 -to qdrii_q[34]
+set_location_assignment PIN_AG21 -to qdrii_q[35]
+set_location_assignment PIN_AE24 -to qdrii_q[4]
+set_location_assignment PIN_AF24 -to qdrii_q[5]
+set_location_assignment PIN_AH24 -to qdrii_q[6]
+set_location_assignment PIN_AW23 -to qdrii_q[7]
+set_location_assignment PIN_AW24 -to qdrii_q[8]
+set_location_assignment PIN_AP24 -to qdrii_q[9]
+set_location_assignment PIN_AD23 -to qdrii_qvld
+set_location_assignment PIN_AR25 -to qdrii_rpsn
+set_location_assignment PIN_AK24 -to qdrii_wpsn
+
+set_location_assignment PIN_AN33 -to rzqin_1_8v
+set_location_assignment PIN_F33 -to rzqin_1_5v
+
+set_location_assignment PIN_T23 -to usb_addr[0]
+set_location_assignment PIN_N23 -to usb_addr[1]
+set_location_assignment PIN_E6 -to usb_clk
+set_location_assignment PIN_J24 -to usb_data[0]
+set_location_assignment PIN_N21 -to usb_data[1]
+set_location_assignment PIN_E21 -to usb_data[2]
+set_location_assignment PIN_K23 -to usb_data[3]
+set_location_assignment PIN_T21 -to usb_data[4]
+set_location_assignment PIN_A24 -to usb_data[5]
+set_location_assignment PIN_M22 -to usb_data[6]
+set_location_assignment PIN_T22 -to usb_data[7]
+set_location_assignment PIN_H24 -to usb_empty
+set_location_assignment PIN_N25 -to usb_full
+set_location_assignment PIN_K26 -to usb_oen
+set_location_assignment PIN_A27 -to usb_rdn
+set_location_assignment PIN_R25 -to usb_resetn
+set_location_assignment PIN_L27 -to usb_scl
+set_location_assignment PIN_F27 -to usb_sda
+set_location_assignment PIN_J27 -to usb_wrn
+
+set_location_assignment PIN_G36 -to sma_a_10g_tx_n
+set_location_assignment PIN_G37 -to sma_a_10g_tx_p
+set_location_assignment PIN_R36 -to sma_a_6g_tx_n0
+set_location_assignment PIN_B4 -to sma_a_6g_tx_n2
+set_location_assignment PIN_R37 -to sma_a_6g_tx_p0
+set_location_assignment PIN_B3 -to sma_a_6g_tx_p2
+set_location_assignment PIN_T38 -to sma_a_rx_l11_n
+set_location_assignment PIN_T39 -to sma_a_rx_l11_p
+set_location_assignment PIN_H38 -to sma_a_rx_l15_n
+set_location_assignment PIN_H39 -to sma_a_rx_l15_p
+set_location_assignment PIN_G2 -to sma_a_rx_r16_n
+set_location_assignment PIN_G1 -to sma_a_rx_r16_p
+set_location_assignment PIN_C2 -to sma_a_rx_r17_n
+set_location_assignment PIN_C1 -to sma_a_rx_r17_p
+
+
+
+set_location_assignment PIN_AF7 -to refclk0_a_qr0_n
+set_location_assignment PIN_AF8 -to refclk0_a_qr0_p
+set_location_assignment PIN_AE32 -to refclk1_a_ql0_n
+set_location_assignment PIN_AE31 -to refclk1_a_ql0_p
+set_location_assignment PIN_U32 -to refclk2_a_ql1_n
+set_location_assignment PIN_U31 -to refclk2_a_ql1_p
+set_location_assignment PIN_AB8 -to refclk2_a_qr1_n
+set_location_assignment PIN_AB9 -to refclk2_a_qr1_p
+set_location_assignment PIN_AA32 -to refclk3_a_ql1_n
+set_location_assignment PIN_AA31 -to refclk3_a_ql1_p
+set_location_assignment PIN_W32 -to refclk4_a_ql2_n
+set_location_assignment PIN_W31 -to refclk4_a_ql2_p
+set_location_assignment PIN_T8 -to refclk4_a_qr2_n
+set_location_assignment PIN_T9 -to refclk4_a_qr2_p
+
+########## REFCLK Signals ################ 
+set_instance_assignment -name IO_STANDARD LVDS -to refclk0_a_qr0_n
+set_instance_assignment -name IO_STANDARD LVDS -to refclk0_a_qr0_p
+set_instance_assignment -name IO_STANDARD LVDS -to refclk1_a_ql0_n
+set_instance_assignment -name IO_STANDARD LVDS -to refclk1_a_ql0_p
+set_instance_assignment -name IO_STANDARD LVDS -to refclk2_a_ql1_n
+set_instance_assignment -name IO_STANDARD LVDS -to refclk2_a_ql1_p
+set_instance_assignment -name IO_STANDARD LVDS -to refclk2_a_qr1_n
+set_instance_assignment -name IO_STANDARD LVDS -to refclk2_a_qr1_p
+set_instance_assignment -name IO_STANDARD LVDS -to refclk3_a_ql1_n
+set_instance_assignment -name IO_STANDARD LVDS -to refclk3_a_ql1_p
+set_instance_assignment -name IO_STANDARD LVDS -to refclk4_a_ql2_n
+set_instance_assignment -name IO_STANDARD LVDS -to refclk4_a_ql2_p
+set_instance_assignment -name IO_STANDARD LVDS -to refclk4_a_qr2_n
+set_instance_assignment -name IO_STANDARD LVDS -to refclk4_a_qr2_p
+
+########## QDRII Signals ################ 
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_odt
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_qvld
+
+######## Ethernet Signals ################
+
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_intn
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_tx_en
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_mdc
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_mdio
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_resetn
+set_instance_assignment -name IO_STANDARD LVDS -to enet_rx_p
+set_instance_assignment -name IO_STANDARD LVDS -to enet_tx_p
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_rx_d[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_rx_d[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_rx_d[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_rx_d[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_tx_d[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_tx_d[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_tx_d[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_tx_d[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_led_link1000
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_gtx_clk
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_rx_dv
+set_instance_assignment -name IO_STANDARD "2.5 V" -to enet_rx_clk
+
+########## Flash/MAX Signals ################
+set_instance_assignment -name IO_STANDARD "1.8 V" -to flash_clk
+set_instance_assignment -name IO_STANDARD "1.8 V" -to flash_oen
+set_instance_assignment -name IO_STANDARD "1.8 V" -to flash_rdybsyn
+set_instance_assignment -name IO_STANDARD "1.8 V" -to flash_resetn
+set_instance_assignment -name IO_STANDARD "1.8 V" -to flash_wen
+set_instance_assignment -name IO_STANDARD "1.8 V" -to flash_advn
+set_instance_assignment -name IO_STANDARD "1.8 V" -to flash_cen
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[26]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[25]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[24]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[23]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[22]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[21]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[20]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[19]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[18]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[17]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[16]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[15]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[14]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[13]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[12]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[11]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[10]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[9]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[8]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[7]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[6]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[5]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_a[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[15]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[14]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[13]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[12]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[11]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[10]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[9]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[8]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[7]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[6]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[5]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to fm_d[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to flash_accessn
+
+set_instance_assignment -name IO_STANDARD "2.5 V" -to max_ctl[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to max_ctl[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to max_ctl[0]
+
+########## USB Blaster II Signals ################
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_data[7]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_data[6]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_data[5]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_data[4]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_data[3]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_data[2]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_data[1]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_data[0]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_addr[1]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_addr[0]
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_full
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_empty
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_scl
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_sda
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_resetn
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_oen
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_rdn
+set_instance_assignment -name IO_STANDARD "1.5 V" -to usb_wrn
+set_instance_assignment -name IO_STANDARD "2.5 V" -to usb_clk
+
+########## User Signals ################         
+set_instance_assignment -name IO_STANDARD "2.5 V" -to cpu1_resetn
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_pb[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_pb[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_pb[0]
+
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_g[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_g[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_g[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_g[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_g[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_g[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_g[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_g[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_r[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_r[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_r[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_r[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_r[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_r[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_r[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_led_r[7]
+
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_dipsw[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_dipsw[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_dipsw[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_dipsw[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_dipsw[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_dipsw[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_dipsw[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to user1_dipsw[6]
+
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lcd1_csn
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lcd1_data[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lcd1_data[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lcd1_data[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lcd1_data[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lcd1_data[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lcd1_data[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lcd1_data[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lcd1_wen
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lcd1_d_cn
+set_instance_assignment -name IO_STANDARD "2.5 V" -to lcd1_data[7]
+
+########## PCIe Signals ################ 
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_rx_p[0]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_rx_p[1]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_rx_p[2]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_rx_p[3]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_rx_p[4]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_rx_p[5]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_rx_p[6]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_rx_p[7]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_tx_p[0]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_tx_p[1]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_tx_p[3]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_tx_p[4]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_tx_p[5]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_tx_p[6]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_tx_p[7]
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_refclk_p
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_rx_p
+set_instance_assignment -name IO_STANDARD "1.4-V PCML" -to pcie_tx_p
+set_instance_assignment -name IO_STANDARD "2.5 V" -to pcie_led_x1
+set_instance_assignment -name IO_STANDARD "2.5 V" -to pcie_led_x4
+set_instance_assignment -name IO_STANDARD "2.5 V" -to pcie_led_x8
+set_instance_assignment -name IO_STANDARD "2.5 V" -to pcie_perstn
+set_instance_assignment -name IO_STANDARD "2.5 V" -to pcie_smbclk
+set_instance_assignment -name IO_STANDARD "2.5 V" -to pcie_smbdat
+set_instance_assignment -name IO_STANDARD "2.5 V" -to pcie_waken
+
+########## Chip-to-Chip Signals ################ 
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[29]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[28]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[27]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[26]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[25]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[24]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[23]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[22]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[21]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[20]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[19]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[18]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[17]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[16]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[15]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[14]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[13]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[12]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[11]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[10]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[9]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[8]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[7]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[6]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[5]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[4]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[3]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[2]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[1]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[0]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[30]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[31]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[32]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[33]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[34]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[35]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[36]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[37]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[38]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[39]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[40]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[41]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[42]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[43]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[44]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[45]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[46]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[47]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[48]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[49]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[50]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[51]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[52]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[53]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[54]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[55]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[56]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[57]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 2.5-V SSTL CLASS II" -to c2c_d_p[58]
+
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+
+###########################################################
+
+set_location_assignment PIN_E9 -to c2c_d_n[0]
+set_location_assignment PIN_D8 -to c2c_d_n[1]
+set_location_assignment PIN_E12 -to c2c_d_n[10]
+set_location_assignment PIN_R13 -to c2c_d_n[11]
+set_location_assignment PIN_C12 -to c2c_d_n[12]
+set_location_assignment PIN_A12 -to c2c_d_n[13]
+set_location_assignment PIN_E13 -to c2c_d_n[14]
+set_location_assignment PIN_D14 -to c2c_d_n[15]
+set_location_assignment PIN_T14 -to c2c_d_n[16]
+set_location_assignment PIN_G14 -to c2c_d_n[17]
+set_location_assignment PIN_T15 -to c2c_d_n[18]
+set_location_assignment PIN_F15 -to c2c_d_n[19]
+set_location_assignment PIN_B7 -to c2c_d_n[2]
+set_location_assignment PIN_R16 -to c2c_d_n[20]
+set_location_assignment PIN_N16 -to c2c_d_n[21]
+set_location_assignment PIN_H16 -to c2c_d_n[22]
+set_location_assignment PIN_E16 -to c2c_d_n[23]
+set_location_assignment PIN_P18 -to c2c_d_n[24]
+set_location_assignment PIN_C16 -to c2c_d_n[25]
+set_location_assignment PIN_G17 -to c2c_d_n[26]
+set_location_assignment PIN_D17 -to c2c_d_n[27]
+set_location_assignment PIN_T19 -to c2c_d_n[28]
+set_location_assignment PIN_F18 -to c2c_d_n[29]
+set_location_assignment PIN_A8 -to c2c_d_n[3]
+set_location_assignment PIN_P19 -to c2c_d_n[30]
+set_location_assignment PIN_A16 -to c2c_d_n[31]
+set_location_assignment PIN_G19 -to c2c_d_n[32]
+set_location_assignment PIN_D19 -to c2c_d_n[33]
+set_location_assignment PIN_A19 -to c2c_d_n[34]
+set_location_assignment PIN_G20 -to c2c_d_n[35]
+set_location_assignment PIN_F10 -to c2c_d_n[4]
+set_location_assignment PIN_C10 -to c2c_d_n[5]
+set_location_assignment PIN_R12 -to c2c_d_n[6]
+set_location_assignment PIN_A10 -to c2c_d_n[7]
+set_location_assignment PIN_N12 -to c2c_d_n[8]
+set_location_assignment PIN_D11 -to c2c_d_n[9]
+set_location_assignment PIN_D9 -to c2c_d_p[0]
+set_location_assignment PIN_C8 -to c2c_d_p[1]
+set_location_assignment PIN_D12 -to c2c_d_p[10]
+set_location_assignment PIN_P13 -to c2c_d_p[11]
+set_location_assignment PIN_B12 -to c2c_d_p[12]
+set_location_assignment PIN_A13 -to c2c_d_p[13]
+set_location_assignment PIN_D13 -to c2c_d_p[14]
+set_location_assignment PIN_C14 -to c2c_d_p[15]
+set_location_assignment PIN_R14 -to c2c_d_p[16]
+set_location_assignment PIN_F14 -to c2c_d_p[17]
+set_location_assignment PIN_R15 -to c2c_d_p[18]
+set_location_assignment PIN_E15 -to c2c_d_p[19]
+set_location_assignment PIN_A7 -to c2c_d_p[2]
+set_location_assignment PIN_P16 -to c2c_d_p[20]
+set_location_assignment PIN_M16 -to c2c_d_p[21]
+set_location_assignment PIN_G16 -to c2c_d_p[22]
+set_location_assignment PIN_D16 -to c2c_d_p[23]
+set_location_assignment PIN_N18 -to c2c_d_p[24]
+set_location_assignment PIN_B16 -to c2c_d_p[25]
+set_location_assignment PIN_F17 -to c2c_d_p[26]
+set_location_assignment PIN_C17 -to c2c_d_p[27]
+set_location_assignment PIN_R19 -to c2c_d_p[28]
+set_location_assignment PIN_E18 -to c2c_d_p[29]
+set_location_assignment PIN_A9 -to c2c_d_p[3]
+set_location_assignment PIN_N19 -to c2c_d_p[30]
+set_location_assignment PIN_A17 -to c2c_d_p[31]
+set_location_assignment PIN_F19 -to c2c_d_p[32]
+set_location_assignment PIN_C19 -to c2c_d_p[33]
+set_location_assignment PIN_A18 -to c2c_d_p[34]
+set_location_assignment PIN_F20 -to c2c_d_p[35]
+set_location_assignment PIN_E10 -to c2c_d_p[4]
+set_location_assignment PIN_B10 -to c2c_d_p[5]
+set_location_assignment PIN_P12 -to c2c_d_p[6]
+set_location_assignment PIN_A11 -to c2c_d_p[7]
+set_location_assignment PIN_M12 -to c2c_d_p[8]
+set_location_assignment PIN_C11 -to c2c_d_p[9]
+
+set_location_assignment PIN_AW7 -to c2c_d_n[36]
+set_location_assignment PIN_AW6 -to c2c_d_n[37]
+set_location_assignment PIN_AU7 -to c2c_d_n[38]
+set_location_assignment PIN_AT8 -to c2c_d_n[39]
+set_location_assignment PIN_AD15 -to c2c_d_n[40]
+set_location_assignment PIN_AD22 -to c2c_d_n[41]
+set_location_assignment PIN_AN13 -to c2c_d_n[42]
+set_location_assignment PIN_AE14 -to c2c_d_n[43]
+set_location_assignment PIN_AV12 -to c2c_d_n[44]
+set_location_assignment PIN_AW10 -to c2c_d_n[45]
+set_location_assignment PIN_AH13 -to c2c_d_n[46]
+set_location_assignment PIN_AF13 -to c2c_d_n[47]
+set_location_assignment PIN_AT11 -to c2c_d_n[48]
+set_location_assignment PIN_AC13 -to c2c_d_n[49]
+set_location_assignment PIN_AV9 -to c2c_d_n[50]
+set_location_assignment PIN_AF12 -to c2c_d_n[51]
+set_location_assignment PIN_AG11 -to c2c_d_n[52]
+set_location_assignment PIN_AP10 -to c2c_d_n[53]
+set_location_assignment PIN_AE16 -to c2c_d_n[54]
+set_location_assignment PIN_AW14 -to c2c_d_n[55]
+set_location_assignment PIN_AG16 -to c2c_d_n[56]
+set_location_assignment PIN_AV13 -to c2c_d_n[57]
+set_location_assignment PIN_AT15 -to c2c_d_n[58]
+set_location_assignment PIN_AT14 -to c2c_d_n[59]
+set_location_assignment PIN_AW8 -to c2c_d_p[36]
+set_location_assignment PIN_AW5 -to c2c_d_p[37]
+set_location_assignment PIN_AU8 -to c2c_d_p[38]
+set_location_assignment PIN_AR9 -to c2c_d_p[39]
+set_location_assignment PIN_AE15 -to c2c_d_p[40]
+set_location_assignment PIN_AE23 -to c2c_d_p[41]
+set_location_assignment PIN_AP14 -to c2c_d_p[42]
+set_location_assignment PIN_AE13 -to c2c_d_p[43]
+set_location_assignment PIN_AW12 -to c2c_d_p[44]
+set_location_assignment PIN_AW11 -to c2c_d_p[45]
+set_location_assignment PIN_AJ13 -to c2c_d_p[46]
+set_location_assignment PIN_AG13 -to c2c_d_p[47]
+set_location_assignment PIN_AU11 -to c2c_d_p[48]
+set_location_assignment PIN_AD13 -to c2c_d_p[49]
+set_location_assignment PIN_AW9 -to c2c_d_p[50]
+set_location_assignment PIN_AG12 -to c2c_d_p[51]
+set_location_assignment PIN_AH11 -to c2c_d_p[52]
+set_location_assignment PIN_AR10 -to c2c_d_p[53]
+set_location_assignment PIN_AF15 -to c2c_d_p[54]
+set_location_assignment PIN_AW15 -to c2c_d_p[55]
+set_location_assignment PIN_AH16 -to c2c_d_p[56]
+set_location_assignment PIN_AW13 -to c2c_d_p[57]
+set_location_assignment PIN_AU15 -to c2c_d_p[58]
+set_location_assignment PIN_AU14 -to c2c_d_p[59]
+
+set_location_assignment PIN_G17 -to user1_dipsw[4]
+set_location_assignment PIN_F17 -to user1_dipsw[5]
+set_location_assignment PIN_D17 -to user1_dipsw[6]
+set_location_assignment PIN_C17 -to user1_dipsw[7]
+set_location_assignment PIN_C15 -to user1_led_g[0]
+set_location_assignment PIN_R18 -to user1_led_g[1]
+set_location_assignment PIN_F11 -to user1_led_g[2]
+set_location_assignment PIN_AP11 -to user1_led_g[3]
+set_location_assignment PIN_AU14 -to user1_led_g[4]
+set_location_assignment PIN_AE16 -to user1_led_g[5]
+set_location_assignment PIN_AF15 -to user1_led_g[6]
+set_location_assignment PIN_AK15 -to user1_led_g[7]
+set_location_assignment PIN_AL15 -to user1_led_r[0]
+set_location_assignment PIN_AC15 -to user1_led_r[1]
+set_location_assignment PIN_AD14 -to user1_led_r[2]
+set_location_assignment PIN_AN8 -to user1_led_r[3]
+set_location_assignment PIN_AP8 -to user1_led_r[4]
+set_location_assignment PIN_AK14 -to user1_led_r[5]
+set_location_assignment PIN_AG14 -to user1_led_r[6]
+set_location_assignment PIN_AH15 -to user1_led_r[7]
+set_location_assignment PIN_T19 -to user1_pb[0]
+set_location_assignment PIN_R19 -to user1_pb[1]
+set_location_assignment PIN_F18 -to user1_pb[2]
+set_location_assignment PIN_L6 -to cpu1_resetn
+
+set_location_assignment PIN_AP16 -to enet_intn
+set_location_assignment PIN_AP19 -to enet_tx_en
+set_location_assignment PIN_AJ18 -to enet_mdc
+set_location_assignment PIN_AL17 -to enet_mdio
+set_location_assignment PIN_AU17 -to enet_rx_d[0]
+set_location_assignment PIN_AL19 -to enet_rx_p
+set_location_assignment PIN_AF19 -to enet_tx_p
+set_location_assignment PIN_AK17 -to enet_resetn
+set_location_assignment PIN_AT17 -to enet_rx_d[1]
+set_location_assignment PIN_AW16 -to enet_rx_d[2]
+set_location_assignment PIN_AH18 -to enet_rx_d[3]
+set_location_assignment PIN_AT19 -to enet_tx_d[0]
+set_location_assignment PIN_AU18 -to enet_tx_d[1]
+set_location_assignment PIN_AH19 -to enet_tx_d[2]
+set_location_assignment PIN_AG19 -to enet_tx_d[3]
+set_location_assignment PIN_AN17 -to enet_led_link1000
+set_location_assignment PIN_AN16 -to enet_gtx_clk
+set_location_assignment PIN_AW17 -to enet_rx_dv
+set_location_assignment PIN_AK7 -to enet_rx_clk
+
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+
+                         
+set_instance_assignment -name IO_STANDARD "1.5 V" -to rzqin_1_5v
+set_instance_assignment -name IO_STANDARD "1.8 V" -to rzqin_1_8v
+
+set_location_assignment PIN_AC22 -to fm_d[0]
+set_location_assignment PIN_AH20 -to fm_d[1]
+set_location_assignment PIN_AN23 -to fm_d[10]
+set_location_assignment PIN_AM21 -to fm_d[11]
+set_location_assignment PIN_AL22 -to fm_d[12]
+set_location_assignment PIN_AG20 -to fm_d[13]
+set_location_assignment PIN_AK22 -to fm_d[14]
+set_location_assignment PIN_AK23 -to fm_d[15]
+set_location_assignment PIN_AG22 -to fm_d[2]
+set_location_assignment PIN_AN20 -to fm_d[3]
+set_location_assignment PIN_AP20 -to fm_d[4]
+set_location_assignment PIN_AV22 -to fm_d[5]
+set_location_assignment PIN_AG23 -to fm_d[6]
+set_location_assignment PIN_AN22 -to fm_d[7]
+set_location_assignment PIN_AH21 -to fm_d[8]
+set_location_assignment PIN_AD21 -to fm_d[9]
+set_location_assignment PIN_AF16 -to flash_accessn
+
+set_location_assignment PIN_AG18 -to max_ctl[0]
+set_location_assignment PIN_AD19 -to max_ctl[1]
+set_location_assignment PIN_AW14 -to max_ctl[2]
+                                       
+
+set_location_assignment PIN_AC18 -to pcie_led_x1
+set_location_assignment PIN_AD17 -to pcie_led_x4
+set_location_assignment PIN_AT16 -to pcie_led_x8
+set_location_assignment PIN_N9 -to pcie_perstn
+set_location_assignment PIN_AV18 -to pcie_smbclk
+set_location_assignment PIN_AM16 -to pcie_smbdat
+set_location_assignment PIN_AL16 -to pcie_waken
+
+
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[70]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[4]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[5]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[6]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[7]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[8]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[9]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[10]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[11]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[12]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[13]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[14]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[15]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[16]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[17]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[18]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[19]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[20]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[21]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[22]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[23]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[24]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[25]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[26]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[27]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[28]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[29]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[30]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[31]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[32]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[33]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[34]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[35]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[36]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[37]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[38]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[39]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[40]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[41]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[42]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[43]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[44]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[45]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[46]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[47]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[48]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[49]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[50]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[51]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[52]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[53]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[54]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[55]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[56]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[57]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to c2c_d_p[58]
+
+
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[10]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[11]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[12]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[13]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[14]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[15]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[16]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[17]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[4]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[5]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[6]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[7]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[8]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[9]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_bwsn[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_bwsn[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_bwsn[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_bwsn[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_cq_p
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[10]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[11]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[12]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[13]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[14]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[15]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[16]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[17]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[18]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[19]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[20]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[21]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[22]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[23]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[24]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[25]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[26]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[27]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[28]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[29]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[30]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[31]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[32]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[33]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[34]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[35]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[4]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[5]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[6]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[7]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[8]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_d[9]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_k_n
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_k_p
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_odt
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[10]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[11]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[12]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[13]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[14]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[15]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[16]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[17]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[18]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[19]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[20]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[21]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[22]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[23]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[24]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[25]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[26]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[27]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[28]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[29]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[30]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[31]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[32]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[33]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[34]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[35]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[4]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[5]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[6]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[7]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[8]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_q[9]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_qvld
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_rpsn
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_wpsn
+
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_addr[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_addr[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_clk
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_data[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_data[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_data[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_data[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_data[4]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_data[5]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_data[6]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_data[7]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_empty
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_full
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_oen
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_rdn
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_scl
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_sda
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to usb_wrn
+
+
+
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to flash_advn
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to flash_cen
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to flash_clk
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to flash_oen
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to flash_rdybsyn
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to flash_resetn
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to flash_wen
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[10]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[11]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[12]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[13]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[14]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[15]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[16]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[17]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[18]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[19]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[20]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[21]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[22]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[23]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[24]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[25]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[26]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[4]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[5]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[6]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[7]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[8]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_a[9]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[10]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[11]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[12]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[13]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[14]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[15]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[4]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[5]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[6]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[7]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[8]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to fm_d[9]
+        
+    
+
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to pcie_led_x1
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to pcie_led_x4
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to pcie_led_x8
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to pcie_perstn
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to pcie_smbclk
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to pcie_smbdat
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to pcie_waken
+
+
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[14]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[13]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[12]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[11]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[10]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[9]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[8]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[7]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[6]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[5]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[4]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_a[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_ba[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_ba[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_ba[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_casn
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_cke
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_csn
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dm[8]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dm[7]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dm[6]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dm[5]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dm[4]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dm[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dm[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dm[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dm[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[71]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[69]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[68]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[67]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[66]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[65]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[64]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[63]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[62]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[61]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[60]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[59]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[58]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[57]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[56]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[55]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[54]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[53]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[52]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[51]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[50]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[49]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[48]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[47]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[46]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[45]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[44]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[43]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[42]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[41]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[40]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[39]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[38]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[37]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[36]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[35]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[34]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[33]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[32]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[31]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[30]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[29]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[28]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[27]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[26]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[25]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[24]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[23]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[22]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[21]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[20]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[19]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[18]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[17]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[16]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[15]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[14]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[13]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[12]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[11]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[10]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[9]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[8]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[7]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[6]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[5]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[4]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to ddr3a_dq[0]
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name UNIPHY_SEQUENCER_DQS_CONFIG_ENABLE ON
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name UNIPHY_TEMP_VER_CODE 1570437470
+set_instance_assignment -name IO_STANDARD LVDS -to clkinbota_p
+set_instance_assignment -name IO_STANDARD LVDS -to clkintopa_p
+set_location_assignment PIN_C20 -to clkintopa_p[0]
+set_global_assignment -name ENABLE_ADVANCED_IO_DELAY_CHAIN_OPTIMIZATION ON
+set_location_assignment PIN_AJ25 -to qdrii_a[18]
+set_location_assignment PIN_AV25 -to qdrii_d[35]
+set_location_assignment PIN_AW19 -to qdrii_q[25]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_cq_p
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[0]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[1]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[2]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[3]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[4]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[5]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[6]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[7]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[8]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[9]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[10]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[11]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[12]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[13]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[14]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[15]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[16]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[17]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[18]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[19]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[20]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[21]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[22]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[23]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[24]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[25]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[26]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[27]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[28]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[29]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[30]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[31]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[32]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[33]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[34]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_q[35]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.8-V HSTL CLASS I" -to qdrii_k_p
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.8-V HSTL CLASS I" -to qdrii_k_n
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[0]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[1]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[2]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[3]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[4]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[5]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[6]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[7]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[8]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[9]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[10]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[11]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[12]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[13]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[14]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[15]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[16]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[17]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[18]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[19]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[20]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[21]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[22]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[23]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[24]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[25]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[26]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[27]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[28]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[29]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[30]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[31]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[32]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[33]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[34]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_d[35]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[0]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[10]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[10]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[11]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[11]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[12]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[12]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[13]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[13]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[14]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[14]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[15]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[15]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[16]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[16]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[17]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[17]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[18]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[18]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[1]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[2]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[3]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[4]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[5]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[6]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[7]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[8]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[8]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[9]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[9]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_wpsn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_wpsn
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_rpsn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_rpsn
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_doffn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_doffn
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_bwsn[0]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_bwsn[1]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_bwsn[2]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_bwsn[3]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[0]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[1]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[2]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[3]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[4]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[5]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[6]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[7]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[8]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[9]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[10]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[11]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[12]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[13]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[14]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[15]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[16]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[17]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[18]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[19]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[20]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[21]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[22]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[23]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[24]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[25]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[26]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[27]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[28]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[29]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[30]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[31]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[32]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[33]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[34]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_cq_p -to qdrii_q[35]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[0]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[1]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[2]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[3]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[4]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[5]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[6]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[7]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[8]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[9]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[10]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[11]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[12]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[13]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[14]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[15]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[16]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[17]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[18]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[19]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[20]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[21]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[22]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[23]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[24]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[25]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[26]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[27]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[28]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[29]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[30]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[31]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[32]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[33]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[34]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_d[35]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_bwsn[0]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_bwsn[1]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_bwsn[2]
+set_instance_assignment -name DQ_GROUP 36 -from qdrii_k_p -to qdrii_bwsn[3]
+set_location_assignment PIN_AK30 -to flash_advn
+set_location_assignment PIN_AU30 -to flash_cen
+set_location_assignment PIN_AL31 -to flash_clk
+set_location_assignment PIN_AN30 -to flash_oen
+set_location_assignment PIN_AK32 -to flash_rdybsyn
+set_location_assignment PIN_AL34 -to flash_resetn
+set_location_assignment PIN_AN32 -to flash_wen
+set_location_assignment PIN_AW32 -to fm_a[0]
+set_location_assignment PIN_AT30 -to fm_a[1]
+set_location_assignment PIN_AP33 -to fm_a[10]
+set_location_assignment PIN_AM31 -to fm_a[11]
+set_location_assignment PIN_AP31 -to fm_a[12]
+set_location_assignment PIN_AR31 -to fm_a[13]
+set_location_assignment PIN_AT31 -to fm_a[14]
+set_location_assignment PIN_AE29 -to fm_a[15]
+set_location_assignment PIN_AG30 -to fm_a[16]
+set_location_assignment PIN_AV31 -to fm_a[17]
+set_location_assignment PIN_AW30 -to fm_a[18]
+set_location_assignment PIN_AW31 -to fm_a[19]
+set_location_assignment PIN_AL30 -to fm_a[2]
+set_location_assignment PIN_AV30 -to fm_a[20]
+set_location_assignment PIN_AT29 -to fm_a[21]
+set_location_assignment PIN_AU29 -to fm_a[22]
+set_location_assignment PIN_AP30 -to fm_a[23]
+set_location_assignment PIN_AN29 -to fm_a[24]
+set_location_assignment PIN_AL32 -to fm_a[25]
+set_location_assignment PIN_AM34 -to fm_a[4]
+set_location_assignment PIN_AJ33 -to fm_a[5]
+set_location_assignment PIN_AK33 -to fm_a[6]
+set_location_assignment PIN_AK31 -to fm_a[26]
+set_location_assignment PIN_AP32 -to fm_a[3]
+set_location_assignment PIN_AW33 -to fm_a[7]
+set_location_assignment PIN_AH30 -to fm_a[8]
+set_location_assignment PIN_AR30 -to fm_a[9]
+set_location_assignment PIN_AV12 -to hsma_rx_d_n[0]
+set_location_assignment PIN_AP18 -to hsma_rx_d_n[1]
+set_location_assignment PIN_AL10 -to hsma_rx_d_n[10]
+set_location_assignment PIN_AH13 -to hsma_rx_d_n[11]
+set_location_assignment PIN_AG11 -to hsma_rx_d_n[12]
+set_location_assignment PIN_AF12 -to hsma_rx_d_n[13]
+set_location_assignment PIN_AC13 -to hsma_rx_d_n[14]
+set_location_assignment PIN_AE14 -to hsma_rx_d_n[15]
+set_location_assignment PIN_AF13 -to hsma_rx_d_n[16]
+set_location_assignment PIN_AU7 -to hsma_rx_d_n[2]
+set_location_assignment PIN_AW7 -to hsma_rx_d_n[3]
+set_location_assignment PIN_AV9 -to hsma_rx_d_n[4]
+set_location_assignment PIN_AT11 -to hsma_rx_d_n[5]
+set_location_assignment PIN_AT8 -to hsma_rx_d_n[6]
+set_location_assignment PIN_AW6 -to hsma_rx_d_n[7]
+set_location_assignment PIN_AW10 -to hsma_rx_d_n[8]
+set_location_assignment PIN_AP10 -to hsma_rx_d_n[9]
+set_location_assignment PIN_AW12 -to hsma_rx_d_p[0]
+set_location_assignment PIN_AR18 -to hsma_rx_d_p[1]
+set_location_assignment PIN_AM10 -to hsma_rx_d_p[10]
+set_location_assignment PIN_AJ13 -to hsma_rx_d_p[11]
+set_location_assignment PIN_AH11 -to hsma_rx_d_p[12]
+set_location_assignment PIN_AG12 -to hsma_rx_d_p[13]
+set_location_assignment PIN_AD13 -to hsma_rx_d_p[14]
+set_location_assignment PIN_AE13 -to hsma_rx_d_p[15]
+set_location_assignment PIN_AG13 -to hsma_rx_d_p[16]
+set_location_assignment PIN_AU8 -to hsma_rx_d_p[2]
+set_location_assignment PIN_AW8 -to hsma_rx_d_p[3]
+set_location_assignment PIN_AW9 -to hsma_rx_d_p[4]
+set_location_assignment PIN_AU11 -to hsma_rx_d_p[5]
+set_location_assignment PIN_AR9 -to hsma_rx_d_p[6]
+set_location_assignment PIN_AW5 -to hsma_rx_d_p[7]
+set_location_assignment PIN_AW11 -to hsma_rx_d_p[8]
+set_location_assignment PIN_AR10 -to hsma_rx_d_p[9]
+set_location_assignment PIN_AV7 -to hsma_tx_d_n[0]
+set_location_assignment PIN_AT6 -to hsma_tx_d_n[1]
+set_location_assignment PIN_AK11 -to hsma_tx_d_n[10]
+set_location_assignment PIN_AK12 -to hsma_tx_d_n[11]
+set_location_assignment PIN_AL13 -to hsma_tx_d_n[12]
+set_location_assignment PIN_AD12 -to hsma_tx_d_n[13]
+set_location_assignment PIN_AC12 -to hsma_tx_d_n[14]
+set_location_assignment PIN_AP13 -to hsma_tx_d_n[15]
+set_location_assignment PIN_AH12 -to hsma_tx_d_n[16]
+set_location_assignment PIN_AT9 -to hsma_tx_d_n[2]
+set_location_assignment PIN_AU10 -to hsma_tx_d_n[3]
+set_location_assignment PIN_AT12 -to hsma_tx_d_n[4]
+set_location_assignment PIN_AN9 -to hsma_tx_d_n[5]
+set_location_assignment PIN_AN12 -to hsma_tx_d_n[6]
+set_location_assignment PIN_AL9 -to hsma_tx_d_n[7]
+set_location_assignment PIN_AK8 -to hsma_tx_d_n[8]
+set_location_assignment PIN_AK9 -to hsma_tx_d_n[9]
+set_location_assignment PIN_AV6 -to hsma_tx_d_p[0]
+set_location_assignment PIN_AU6 -to hsma_tx_d_p[1]
+set_location_assignment PIN_AL11 -to hsma_tx_d_p[10]
+set_location_assignment PIN_AL12 -to hsma_tx_d_p[11]
+set_location_assignment PIN_AM13 -to hsma_tx_d_p[12]
+set_location_assignment PIN_AE12 -to hsma_tx_d_p[13]
+set_location_assignment PIN_AD11 -to hsma_tx_d_p[14]
+set_location_assignment PIN_AR13 -to hsma_tx_d_p[15]
+set_location_assignment PIN_AJ12 -to hsma_tx_d_p[16]
+set_location_assignment PIN_AU9 -to hsma_tx_d_p[2]
+set_location_assignment PIN_AV10 -to hsma_tx_d_p[3]
+set_location_assignment PIN_AU12 -to hsma_tx_d_p[4]
+set_location_assignment PIN_AP9 -to hsma_tx_d_p[5]
+set_location_assignment PIN_AP12 -to hsma_tx_d_p[6]
+set_location_assignment PIN_AM9 -to hsma_tx_d_p[7]
+set_location_assignment PIN_AL8 -to hsma_tx_d_p[8]
+set_location_assignment PIN_AK10 -to hsma_tx_d_p[9]
+set_location_assignment PIN_AG16 -to hsma_d[0]
+set_location_assignment PIN_AH16 -to hsma_d[1]
+set_location_assignment PIN_AV13 -to hsma_d[2]
+set_location_assignment PIN_AW13 -to hsma_d[3]
+set_location_assignment PIN_AW15 -to hsma_prsntn
+set_location_assignment PIN_AT15 -to hsma_rx_led
+set_location_assignment PIN_AU15 -to hsma_scl
+set_location_assignment PIN_AT14 -to hsma_sda
+set_location_assignment PIN_AH14 -to hsma_tx_led
+set_location_assignment PIN_AD16 -to sfp_scl[2]
+set_location_assignment PIN_AC16 -to sfp_sda[1]
+set_location_assignment PIN_AP15 -to sfp_sda[2]
+set_location_assignment PIN_AN15 -to sfp_tx_dis[1]
+set_location_assignment PIN_AD15 -to sfp_tx_dis[2]
+set_location_assignment PIN_AE19 -to enet_tx_n
+set_location_assignment PIN_AK19 -to enet_rx_n
+set_location_assignment PIN_AK16 -to sfp_mod_abs[1]
+set_location_assignment PIN_AJ16 -to sfp_mod_abs[2]
+set_location_assignment PIN_AN19 -to sfp_op_rx_los[1]
+set_location_assignment PIN_AH17 -to sfp_op_rx_los[2]
+set_location_assignment PIN_AL18 -to sfp_scl[1]
+set_location_assignment PIN_AD20 -to clkinbota_p[0]
+set_location_assignment PIN_E9 -to c2c_din_n[0]
+set_location_assignment PIN_D8 -to c2c_din_n[1]
+set_location_assignment PIN_F10 -to c2c_din_n[10]
+set_location_assignment PIN_C10 -to c2c_din_n[11]
+set_location_assignment PIN_R12 -to c2c_din_n[12]
+set_location_assignment PIN_A10 -to c2c_din_n[13]
+set_location_assignment PIN_N12 -to c2c_din_n[14]
+set_location_assignment PIN_D11 -to c2c_din_n[15]
+set_location_assignment PIN_E12 -to c2c_din_n[16]
+set_location_assignment PIN_R13 -to c2c_din_n[17]
+set_location_assignment PIN_C12 -to c2c_din_n[18]
+set_location_assignment PIN_A12 -to c2c_din_n[19]
+set_location_assignment PIN_E16 -to c2c_din_n[2]
+set_location_assignment PIN_E13 -to c2c_din_n[20]
+set_location_assignment PIN_D14 -to c2c_din_n[21]
+set_location_assignment PIN_T14 -to c2c_din_n[22]
+set_location_assignment PIN_G14 -to c2c_din_n[23]
+set_location_assignment PIN_T15 -to c2c_din_n[24]
+set_location_assignment PIN_F15 -to c2c_din_n[25]
+set_location_assignment PIN_R16 -to c2c_din_n[26]
+set_location_assignment PIN_N16 -to c2c_din_n[27]
+set_location_assignment PIN_H16 -to c2c_din_n[28]
+set_location_assignment PIN_A8 -to c2c_din_n[3]
+set_location_assignment PIN_P19 -to c2c_din_n[4]
+set_location_assignment PIN_A16 -to c2c_din_n[5]
+set_location_assignment PIN_G19 -to c2c_din_n[6]
+set_location_assignment PIN_D19 -to c2c_din_n[7]
+set_location_assignment PIN_A19 -to c2c_din_n[8]
+set_location_assignment PIN_G20 -to c2c_din_n[9]
+set_location_assignment PIN_D9 -to c2c_din_p[0]
+set_location_assignment PIN_C8 -to c2c_din_p[1]
+set_location_assignment PIN_E10 -to c2c_din_p[10]
+set_location_assignment PIN_B10 -to c2c_din_p[11]
+set_location_assignment PIN_P12 -to c2c_din_p[12]
+set_location_assignment PIN_A11 -to c2c_din_p[13]
+set_location_assignment PIN_M12 -to c2c_din_p[14]
+set_location_assignment PIN_C11 -to c2c_din_p[15]
+set_location_assignment PIN_D12 -to c2c_din_p[16]
+set_location_assignment PIN_P13 -to c2c_din_p[17]
+set_location_assignment PIN_B12 -to c2c_din_p[18]
+set_location_assignment PIN_A13 -to c2c_din_p[19]
+set_location_assignment PIN_D16 -to c2c_din_p[2]
+set_location_assignment PIN_D13 -to c2c_din_p[20]
+set_location_assignment PIN_C14 -to c2c_din_p[21]
+set_location_assignment PIN_R14 -to c2c_din_p[22]
+set_location_assignment PIN_F14 -to c2c_din_p[23]
+set_location_assignment PIN_R15 -to c2c_din_p[24]
+set_location_assignment PIN_E15 -to c2c_din_p[25]
+set_location_assignment PIN_P16 -to c2c_din_p[26]
+set_location_assignment PIN_M16 -to c2c_din_p[27]
+set_location_assignment PIN_G16 -to c2c_din_p[28]
+set_location_assignment PIN_A9 -to c2c_din_p[3]
+set_location_assignment PIN_N19 -to c2c_din_p[4]
+set_location_assignment PIN_A17 -to c2c_din_p[5]
+set_location_assignment PIN_F19 -to c2c_din_p[6]
+set_location_assignment PIN_C19 -to c2c_din_p[7]
+set_location_assignment PIN_A18 -to c2c_din_p[8]
+set_location_assignment PIN_F20 -to c2c_din_p[9]
+set_location_assignment PIN_G9 -to c2c_dout_n[0]
+set_location_assignment PIN_L9 -to c2c_dout_n[1]
+set_location_assignment PIN_L12 -to c2c_dout_n[10]
+set_location_assignment PIN_G12 -to c2c_dout_n[11]
+set_location_assignment PIN_J12 -to c2c_dout_n[12]
+set_location_assignment PIN_N13 -to c2c_dout_n[13]
+set_location_assignment PIN_K13 -to c2c_dout_n[14]
+set_location_assignment PIN_B13 -to c2c_dout_n[15]
+set_location_assignment PIN_H13 -to c2c_dout_n[16]
+set_location_assignment PIN_N14 -to c2c_dout_n[17]
+set_location_assignment PIN_M15 -to c2c_dout_n[18]
+set_location_assignment PIN_P15 -to c2c_dout_n[19]
+set_location_assignment PIN_C9 -to c2c_dout_n[2]
+set_location_assignment PIN_K14 -to c2c_dout_n[20]
+set_location_assignment PIN_J15 -to c2c_dout_n[21]
+set_location_assignment PIN_B15 -to c2c_dout_n[22]
+set_location_assignment PIN_K16 -to c2c_dout_n[23]
+set_location_assignment PIN_N17 -to c2c_dout_n[24]
+set_location_assignment PIN_K17 -to c2c_dout_n[25]
+set_location_assignment PIN_T17 -to c2c_dout_n[26]
+set_location_assignment PIN_L18 -to c2c_dout_n[27]
+set_location_assignment PIN_C18 -to c2c_dout_n[28]
+set_location_assignment PIN_J9 -to c2c_dout_n[3]
+set_location_assignment PIN_G7 -to c2c_dout_n[4]
+set_location_assignment PIN_D7 -to c2c_dout_n[5]
+set_location_assignment PIN_M11 -to c2c_dout_n[6]
+set_location_assignment PIN_J10 -to c2c_dout_n[7]
+set_location_assignment PIN_T11 -to c2c_dout_n[8]
+set_location_assignment PIN_K11 -to c2c_dout_n[9]
+set_location_assignment PIN_F9 -to c2c_dout_p[0]
+set_location_assignment PIN_K9 -to c2c_dout_p[1]
+set_location_assignment PIN_K12 -to c2c_dout_p[10]
+set_location_assignment PIN_F12 -to c2c_dout_p[11]
+set_location_assignment PIN_H12 -to c2c_dout_p[12]
+set_location_assignment PIN_M13 -to c2c_dout_p[13]
+set_location_assignment PIN_J13 -to c2c_dout_p[14]
+set_location_assignment PIN_A14 -to c2c_dout_p[15]
+set_location_assignment PIN_G13 -to c2c_dout_p[16]
+set_location_assignment PIN_M14 -to c2c_dout_p[17]
+set_location_assignment PIN_L15 -to c2c_dout_p[18]
+set_location_assignment PIN_N15 -to c2c_dout_p[19]
+set_location_assignment PIN_B9 -to c2c_dout_p[2]
+set_location_assignment PIN_J14 -to c2c_dout_p[20]
+set_location_assignment PIN_H15 -to c2c_dout_p[21]
+set_location_assignment PIN_A15 -to c2c_dout_p[22]
+set_location_assignment PIN_J16 -to c2c_dout_p[23]
+set_location_assignment PIN_M17 -to c2c_dout_p[24]
+set_location_assignment PIN_J17 -to c2c_dout_p[25]
+set_location_assignment PIN_R17 -to c2c_dout_p[26]
+set_location_assignment PIN_K18 -to c2c_dout_p[27]
+set_location_assignment PIN_B18 -to c2c_dout_p[28]
+set_location_assignment PIN_H9 -to c2c_dout_p[3]
+set_location_assignment PIN_F7 -to c2c_dout_p[4]
+set_location_assignment PIN_C7 -to c2c_dout_p[5]
+set_location_assignment PIN_N10 -to c2c_dout_p[6]
+set_location_assignment PIN_H10 -to c2c_dout_p[7]
+set_location_assignment PIN_R11 -to c2c_dout_p[8]
+set_location_assignment PIN_J11 -to c2c_dout_p[9]
+set_location_assignment PIN_D20 -to "clkintopa_p[0](n)"
+set_instance_assignment -name IO_STANDARD LVDS -to c2c_din_p
+set_instance_assignment -name IO_STANDARD LVDS -to c2c_dout_p
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to c2c_din_p
+set_instance_assignment -name IO_STANDARD LVDS -to hsma_clk_in_p1
+set_instance_assignment -name IO_STANDARD LVDS -to hsma_clk_in_p2
+set_instance_assignment -name IO_STANDARD LVDS -to hsma_clk_out_p1
+set_instance_assignment -name IO_STANDARD LVDS -to hsma_clk_out_p2
+set_instance_assignment -name IO_STANDARD LVDS -to hsma_rx_d_p
+set_instance_assignment -name IO_STANDARD LVDS -to hsma_tx_d_p
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to hsma_clk_in_p1
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to hsma_clk_in_p2
+set_location_assignment PIN_AV4 -to hsma_clk_in_n1
+set_location_assignment PIN_AP6 -to hsma_clk_in_n2
+set_location_assignment PIN_AW4 -to hsma_clk_in_p1
+set_location_assignment PIN_AR6 -to hsma_clk_in_p2
+set_location_assignment PIN_AT13 -to hsma_clk_out_n1
+set_location_assignment PIN_AL7 -to hsma_clk_out_n2
+set_location_assignment PIN_AU13 -to hsma_clk_out_p1
+set_location_assignment PIN_AM7 -to hsma_clk_out_p2
+set_location_assignment PIN_AT7 -to hsma_clk_in0
+set_location_assignment PIN_AL14 -to hsma_clk_out0
+set_location_assignment PIN_AG17 -to sfp_op_tx_flt[1]
+set_location_assignment PIN_AM18 -to sfp_op_tx_flt[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_cq_n_pin
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_cq_n_pin
+set_location_assignment PIN_AT32 -to qdrii_a[19]
+set_location_assignment PIN_AU32 -to qdrii_a[20]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[19]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[19]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[19]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to qdrii_a[20]
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_a[20]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to qdrii_a[20]
+set_location_assignment PIN_AR21 -to qdrii_cq_n_pin
+set_location_assignment PIN_AL20 -to clkinbota_p[1]
+set_location_assignment PIN_A22 -to clkintopa_p[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[5]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[6]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[7]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[8]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[9]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[10]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[11]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[12]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[13]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[14]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[15]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[16]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[17]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[18]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[19]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[20]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[21]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[22]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[23]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[24]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[25]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[26]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[27]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[28]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[29]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[30]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[31]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[32]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[33]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[34]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[35]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[36]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[37]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[38]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[39]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[40]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[41]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[42]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[43]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[44]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[45]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[46]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[47]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[48]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[49]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[50]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[51]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[52]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[53]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[54]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[55]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[56]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[57]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[58]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[59]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[60]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[61]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[62]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[63]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[64]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[65]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[66]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[67]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[68]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[69]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[70]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dq[71]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_p[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_p[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_p[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_p[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_p[5]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_p[6]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_p[7]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_p[8]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_n[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_n[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_n[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_n[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_n[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_n[5]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_n[6]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_n[7]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_n[8]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_clk_p
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_clk_n
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[10]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[10]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[11]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[12]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[12]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[13]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[13]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[5]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[6]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[7]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[8]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[8]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_a[9]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[9]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_ba[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_ba[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_ba[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_ba[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_ba[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_ba[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_csn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_csn
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_wen
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_wen
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_rasn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_rasn
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_casn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_casn
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_cke
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_cke
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_odt
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_odt
+set_instance_assignment -name IO_STANDARD 1.5V -to ddr3a_resetn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_resetn
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dm[0]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dm[1]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dm[2]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dm[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dm[4]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dm[5]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dm[6]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dm[7]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dm[8]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[0] -to ddr3a_dq[0]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[0] -to ddr3a_dq[1]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[0] -to ddr3a_dq[2]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[0] -to ddr3a_dq[3]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[0] -to ddr3a_dq[4]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[0] -to ddr3a_dq[5]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[0] -to ddr3a_dq[6]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[0] -to ddr3a_dq[7]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[1] -to ddr3a_dq[8]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[1] -to ddr3a_dq[9]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[1] -to ddr3a_dq[10]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[1] -to ddr3a_dq[11]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[1] -to ddr3a_dq[12]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[1] -to ddr3a_dq[13]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[1] -to ddr3a_dq[14]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[1] -to ddr3a_dq[15]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[2] -to ddr3a_dq[16]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[2] -to ddr3a_dq[17]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[2] -to ddr3a_dq[18]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[2] -to ddr3a_dq[19]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[2] -to ddr3a_dq[20]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[2] -to ddr3a_dq[21]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[2] -to ddr3a_dq[22]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[2] -to ddr3a_dq[23]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[3] -to ddr3a_dq[24]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[3] -to ddr3a_dq[25]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[3] -to ddr3a_dq[26]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[3] -to ddr3a_dq[27]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[3] -to ddr3a_dq[28]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[3] -to ddr3a_dq[29]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[3] -to ddr3a_dq[30]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[3] -to ddr3a_dq[31]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[4] -to ddr3a_dq[32]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[4] -to ddr3a_dq[33]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[4] -to ddr3a_dq[34]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[4] -to ddr3a_dq[35]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[4] -to ddr3a_dq[36]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[4] -to ddr3a_dq[37]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[4] -to ddr3a_dq[38]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[4] -to ddr3a_dq[39]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[5] -to ddr3a_dq[40]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[5] -to ddr3a_dq[41]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[5] -to ddr3a_dq[42]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[5] -to ddr3a_dq[43]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[5] -to ddr3a_dq[44]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[5] -to ddr3a_dq[45]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[5] -to ddr3a_dq[46]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[5] -to ddr3a_dq[47]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[6] -to ddr3a_dq[48]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[6] -to ddr3a_dq[49]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[6] -to ddr3a_dq[50]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[6] -to ddr3a_dq[51]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[6] -to ddr3a_dq[52]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[6] -to ddr3a_dq[53]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[6] -to ddr3a_dq[54]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[6] -to ddr3a_dq[55]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[7] -to ddr3a_dq[56]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[7] -to ddr3a_dq[57]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[7] -to ddr3a_dq[58]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[7] -to ddr3a_dq[59]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[7] -to ddr3a_dq[60]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[7] -to ddr3a_dq[61]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[7] -to ddr3a_dq[62]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[7] -to ddr3a_dq[63]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[8] -to ddr3a_dq[64]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[8] -to ddr3a_dq[65]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[8] -to ddr3a_dq[66]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[8] -to ddr3a_dq[67]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[8] -to ddr3a_dq[68]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[8] -to ddr3a_dq[69]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[8] -to ddr3a_dq[70]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[8] -to ddr3a_dq[71]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[0] -to ddr3a_dm[0]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[1] -to ddr3a_dm[1]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[2] -to ddr3a_dm[2]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[3] -to ddr3a_dm[3]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[4] -to ddr3a_dm[4]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[5] -to ddr3a_dm[5]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[6] -to ddr3a_dm[6]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[7] -to ddr3a_dm[7]
+set_instance_assignment -name DQ_GROUP 9 -from ddr3_dqs_p[8] -to ddr3a_dm[8]
+set_location_assignment PIN_E18 -to lcd1_csn
+set_location_assignment PIN_M19 -to lcd1_d_cn
+set_location_assignment PIN_L19 -to lcd1_data[7]
+set_location_assignment PIN_K19 -to lcd1_data[6]
+set_location_assignment PIN_J19 -to lcd1_data[5]
+set_location_assignment PIN_K20 -to lcd1_data[4]
+set_location_assignment PIN_J20 -to lcd1_data[3]
+set_location_assignment PIN_T20 -to lcd1_data[2]
+set_location_assignment PIN_R20 -to lcd1_data[1]
+set_location_assignment PIN_N20 -to lcd1_data[0]
+set_location_assignment PIN_M20 -to lcd1_wen
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to cpu1_resetn
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to lcd1_csn
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to lcd1_d_cn
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to lcd1_data[7]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to lcd1_data[6]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to lcd1_data[5]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to lcd1_data[4]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to lcd1_data[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to lcd1_data[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to lcd1_data[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to lcd1_data[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to lcd1_wen
+set_location_assignment PIN_AN14 -to sfp_tx_rs0[1]
+set_location_assignment PIN_AP14 -to sfp_tx_rs0[2]
+set_location_assignment PIN_AE15 -to sfp_tx_rs1[1]
+set_location_assignment PIN_AN7 -to sfp_tx_rs1[2]
+set_location_assignment PIN_AF21 -to clkina_50
+set_instance_assignment -name IO_STANDARD "1.8 V" -to clkina_50
+set_location_assignment PIN_AP34 -to clka_125_p
+set_instance_assignment -name IO_STANDARD LVDS -to clka_125_p
+set_location_assignment PIN_P18 -to user1_dipsw[0]
+set_location_assignment PIN_N18 -to user1_dipsw[1]
+set_location_assignment PIN_C16 -to user1_dipsw[2]
+set_location_assignment PIN_B16 -to user1_dipsw[3]
+set_instance_assignment -name IO_STANDARD "SSTL-15 CLASS I" -to ddr3a_dqs_p[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ddr3a_a[11]
+set_global_assignment -name SEARCH_PATH altera/11.1sp2_ib231/quartus/libraries/others/maxplus2/ -tag from_archive
+set_global_assignment -name SEARCH_PATH altera/11.1sp2_ib231/quartus/libraries/vhdl/ieee/ -tag from_archive
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_instance_assignment -name IO_STANDARD LVDS -to c2c_fpga1_clkin_p
+set_location_assignment PIN_A6 -to c2c_fpga1_clkin_p
+set_instance_assignment -name IO_STANDARD LVDS -to c2c_fpga2_clkin_p
+set_location_assignment PIN_H18 -to c2c_fpga2_clkin_p
+set_location_assignment PIN_B6 -to c2c_fpga1_clkin_n
+set_location_assignment PIN_J18 -to c2c_fpga2_clkin_n
+set_location_assignment PIN_AR16 -to fpga2_pcie_perstn
+set_instance_assignment -name IO_STANDARD "2.5 V" -to fpga2_pcie_perstn
+set_instance_assignment -name IO_STANDARD "2.5 V" -to max_ben[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to max_ben[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to max_ben[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to max_ben[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to max_clk
+set_instance_assignment -name IO_STANDARD "1.8 V" -to max_csn
+set_instance_assignment -name IO_STANDARD "1.8 V" -to max_oen
+set_instance_assignment -name IO_STANDARD "1.8 V" -to max_wen
+set_location_assignment PIN_AE18 -to max_ben[0]
+set_location_assignment PIN_AD18 -to max_ben[1]
+set_location_assignment PIN_AJ7 -to max_ben[2]
+set_location_assignment PIN_AW18 -to max_ben[3]
+set_location_assignment PIN_AN31 -to max_clk
+set_location_assignment PIN_AD29 -to max_csn
+set_location_assignment PIN_AU31 -to max_oen
+set_location_assignment PIN_AP29 -to max_wen
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to max_ben[0]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to max_ben[1]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to max_ben[2]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to max_ben[3]
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to max_clk
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to max_csn
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to max_oen
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "10 MHz" -to max_wen
+set_location_assignment PIN_AE25 -to "qdrii_k_p(n)"
+set_location_assignment PIN_AF25 -to qdrii_k_p
+set_location_assignment PIN_AD23 -to qdrii_c_p
+set_instance_assignment -name IO_STANDARD "1.8-V HSTL CLASS I" -to qdrii_c_p
+set_global_assignment -name SOURCE_FILE a5gx_golden_top.qsf
+set_global_assignment -name SDC_FILE Blaster.sdc
+set_global_assignment -name SOURCE_FILE quartus.ini
+set_global_assignment -name VERILOG_FILE a5gx_golden_top.v
+set_global_assignment -name QIP_FILE SFP1.qip
+set_global_assignment -name SIP_FILE SFP1.sip
+set_global_assignment -name QIP_FILE TR_RECONF_CTRL.qip
+set_global_assignment -name SIP_FILE TR_RECONF_CTRL.sip
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to sfp_tx_p1
+set_location_assignment PIN_W36 -to "sfp_tx_p1(n)"
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to sfp_rx_p1
+set_location_assignment PIN_Y39 -to sfp_rx_p1
+set_location_assignment PIN_Y38 -to "sfp_rx_p1(n)"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
