@@ -36,14 +36,10 @@
 
 
 //`define DDR3
-//`define QDRII
-//`define USB
 //`define FM
 //`define ETHERNET
 //`define HSMA
-//`define LCD
 `define USER
-//`define PCIE
 `define SFP
 `define C2C
 
@@ -85,42 +81,6 @@ module a5gx_golden_top
   input	  rzqin_1_5v,			//OCT Pin in Bank TBD
 
 `endif
-
-`ifdef QDRII
-//QDRII+ x36read/x36write----- devices-------// 103pins //--------------------------
-
-   output  [20:0] qdrii_a,          //HSTL15/18  //Address
-   output  [3:0]  qdrii_bwsn,       //HSTL15/18  //Byte Write Select
-//   input          qdrii_cq_n_pin, //(NOT USED in Arria V) HSTL15/18  //Read Data Clock - Neg )
-   input          qdrii_cq_p,       //HSTL15/18  //Read Data Clock - Pos
-   output  [35:0] qdrii_d,          //HSTL15/18  //Write Data
-   output         qdrii_doffn,      //HSTL15/18  //PLL disable (TR=0)
-//  output         qdrii_k_n,        //HSTL15/18  //Write Data Clock - Neg
-  output         qdrii_k_p,        //HSTL15/18  //Write Data Clock - Pos
-   input   [35:0] qdrii_q,          //HSTL15/18  //Read Data
-   output         qdrii_odt,        //HSTL15/18  //On-Die Termination Enable (QDRII Cn)
-   input          qdrii_c_p,//qdrii_qvld,       //HSTL15/18  //Read Data Valid	(QDRII Cp)
-   output         qdrii_rpsn,       //HSTL15/18  //Read Port Select
-   output         qdrii_wpsn,       //HSTL15/18  //Write Port Select
-   input	  rzqin_1_8v,			//OCT pin for QDRII+
-
-`endif
-
-`ifdef USB
-//USB Blaster II -----------------------------//19 pins  //--------------------------
-	inout	[7:0]	 usb_data,		//1.5V from MAXII
-	inout   [1:0]	 usb_addr,		//1.5V from MAXII
-	inout	 	 usb_clk,		//3.3V from Cypress USB
-	output		 usb_full,		//1.5V from MAXII
-	output		 usb_empty,		//1.5V from MAXII
-	input		 usb_scl,		//1.5V from MAXII
-	inout		 usb_sda,		//1.5V from MAXII
-	input		 usb_oen,		//1.5V from MAXII
-	input		 usb_rdn,		//1.5V from MAXII
-	input		 usb_wrn,		//1.5V from MAXII
-	input		 usb_resetn,		//1.5V from MAXII
-
-`endif 
 
 `ifdef FM
 //FM-Shared-Bus---(Flash/Max)----//57 pins //--------------------------
@@ -187,14 +147,6 @@ module a5gx_golden_top
 	
 `endif
 
-`ifdef LCD
-//Character-LCD------------------------//11 pins //--------------------------
-   output         lcd1_csn,             //2.5V    //LCD Chip Select
-   output         lcd1_d_cn,            //2.5V    //LCD Data / Command Select
-   inout    [7:0] lcd1_data,            //2.5V    //LCD Data
-   output         lcd1_wen,             //2.5V    //LCD Write Enable
-`endif
-
 `ifdef USER
 //User-IO------------------------------//28 pins //--------------------------
    input    [7:0] user1_dipsw,          //2.5V //User DIP Switches (TR=0)
@@ -205,29 +157,12 @@ module a5gx_golden_top
 
 `endif
 
-`ifdef PCIE
-//PCI-Express--------------------------//32 pins //--------------------------
-   //input  [7:0] pcie_rx_p,           //PCML14  //PCIe Receive Data-req's OCT
-   //output [7:0] pcie_tx_p,           //PCML14  //PCIe Transmit Data
-   //input        pcie_refclk_p,       //HCSL    //PCIe Clock- Terminate on MB
-//  output         pcie_led_g2,         //2.5V    //User LED - Labeled Gen2
-   output         pcie_led_x1,         //2.5V    //User LED - Labeled x1
-   output         pcie_led_x4,         //2.5V    //User LED - Labeled x4
-   output         pcie_led_x8,         //2.5V    //User LED - Labeled x8
-   input          pcie_perstn,         //2.5V    //PCIe Reset 
-   input          pcie_smbclk,         //2.5V    //SMBus Clock (TR=0)
-   inout          pcie_smbdat,         //2.5V    //SMBus Data (TR=0)
-   output         pcie_waken,          //2.5V    //PCIe Wake-Up (TR=0) 
-                                                 //must install 0-ohm resistor
-	output			fpga2_pcie_perstn,		//2.5V	// output to drive second device PCIe PERSTn pin
-`endif
-
 `ifdef SFP
 //SFP+------------------------------//16 pins //--------------------------
 
 inout	[2:1]	sfp_scl,
 inout	[2:1]	sfp_sda,
-input	[2:1]	sfp_tx_dis,
+output[2:1]	sfp_tx_dis,
 output[2:1]	sfp_tx_rs0,
 output[2:1]	sfp_tx_rs1,
 input	[2:1]	sfp_op_rx_los,
@@ -235,17 +170,12 @@ input	[2:1]	sfp_op_tx_flt,
 input	[2:1]	sfp_mod_abs,
 input       sfp_rx_p1,
 output      sfp_tx_p1,
-//input	[2:1]	sfp_rx_p,
-//input	[2:1]	sfp_rx_n,
-//output	[2:1]	sfp_tx_p,
-//output	[2:1]	sfp_tx_n,
 
 `endif
 
 
 `ifdef C2C
 //Chip-to-chip -----------------------//120 pins  //--------------------------
- 
 	input		[28:0]	c2c_din_p, 	         //2.5V
 	output	[28:0]	c2c_dout_p, 	      //2.5V
 	output				c2c_fpga2_clkin_p, 	//LVDS
@@ -254,16 +184,30 @@ output      sfp_tx_p1,
 `endif
 
 );
-
-	// LED
-   assign user1_led_g = 8'b11110000;
-   assign user1_led_r = 8'b11001100;
+	parameter FREQ_50MHZ =  50*1000*1000;
+	parameter UNIT_1MHZ  = 0.1*1000*1000;
 	
+	// reset
+	reg [9:0] r_asbuf_rst_cnt;
+	reg [2:0] r_asbuf_reset_n;
+	reg       reset_n;
+	
+	always @(posedge clkina_50) begin
+		if(r_asbuf_rst_cnt==1000)begin
+			r_asbuf_rst_cnt <= 0;
+			r_asbuf_reset_n <= {r_asbuf_reset_n[1:0],cpu1_resetn};
+			reset_n         <= (r_asbuf_reset_n[2]==r_asbuf_reset_n[1]) ? r_asbuf_reset_n[2] : reset_n;
+		end else begin
+			r_asbuf_rst_cnt <= r_asbuf_rst_cnt+1'b1;
+			r_asbuf_reset_n <= r_asbuf_reset_n;
+			reset_n         <= reset_n;
+		end
+	end
+			
 	// SFP+ TX
 	wire        xgmii_tx_clk; // 156.26MHz
 	wire        w_tx_ready;
 	wire [71:0] w_xgmii_tx_dc_0;
-	wire [7:0]  w_tx_en;
 	wire [7:0]  w_tx0_data;
 	wire [7:0]  w_tx1_data;
 	wire [7:0]  w_tx2_data;
@@ -275,36 +219,74 @@ output      sfp_tx_p1,
 	
 	reg[4:0] r_counter_tx;
 	
-	assign xgmii_tx_clk = clka_125_p;
+	assign xgmii_tx_clk = xgmii_rx_clk; // must
 	
+	reg [31:0] r_clkcnt1;
+	wire[15:0] freq_xgmii_tx_clk;
+	always @(posedge xgmii_tx_clk) begin
+		if(r_clkcnt1==32'd0)begin
+			r_clkcnt1 <= 125*1000*1000-1;
+		end else begin
+			r_clkcnt1 <= r_clkcnt1-1'b1;
+		end
+	end
+	assign user1_led_r[1] = (r_clkcnt1[31:16]==32'd0) ? 1'b0 : 1'b1;
+	clkmon #(.P_CLK_FREQ(FREQ_50MHZ), .P_MON_UNIT(UNIT_1MHZ)) u_clkmon_xgmii_tx (
+		.CLK     (clkina_50),
+		.RESET   (~reset_n ),
+		.MON_CLK (xgmii_tx_clk      ),
+		.MON_FREQ(freq_xgmii_tx_clk )
+	);
+			
+	// Tx Data
+	reg [7:0]  w_tx_en;
+	reg [63:0] w_tx_data;
 	always @(posedge xgmii_tx_clk) begin
 		if(w_tx_ready) begin
 			r_counter_tx <= r_counter_tx + 1'b1;
 		end else begin
 			r_counter_tx <= r_counter_tx;
 		end
+	end	
+	
+	always @(*)begin
+		case (r_counter_tx)
+		0 : begin w_tx_en <= 8'hFF; w_tx_data <= 64'h07070707_07070707; end
+		1 : begin w_tx_en <= 8'h1F; w_tx_data <= 64'h555555FB_07070707; end
+		2 : begin w_tx_en <= 8'h00; w_tx_data <= 64'h00000000_d5555555; end
+		3 : begin w_tx_en <= 8'h00; w_tx_data <= 64'h00000001_00000000; end
+		4 : begin w_tx_en <= 8'h00; w_tx_data <= 64'h00000002_00000000; end
+		5 : begin w_tx_en <= 8'h00; w_tx_data <= 64'h00000003_00000000; end
+		6 : begin w_tx_en <= 8'h00; w_tx_data <= 64'h00000004_00000000; end
+		7 : begin w_tx_en <= 8'h00; w_tx_data <= 64'h00000005_00000000; end
+		8 : begin w_tx_en <= 8'h00; w_tx_data <= 64'h00000006_00000000; end
+		9 : begin w_tx_en <= 8'h00; w_tx_data <= 64'h00000007_00000000; end
+		10: begin w_tx_en <= 8'h00; w_tx_data <= 64'h3dc288af_00000000; end
+		11: begin w_tx_en <= 8'hFF; w_tx_data <= 64'h07070707_070707FD; end
+		default: 
+			 begin w_tx_en <= 8'hFF; w_tx_data <= 64'h07070707_07070707; end
+		endcase
 	end
-		
-	assign w_tx_en    = 8'hFF;
-	assign w_tx0_data = {r_counter_tx,3'd0};
-	assign w_tx1_data = {r_counter_tx,3'd1};
-	assign w_tx2_data = {r_counter_tx,3'd2};
-	assign w_tx3_data = {r_counter_tx,3'd3};
-	assign w_tx4_data = {r_counter_tx,3'd4};
-	assign w_tx5_data = {r_counter_tx,3'd5};
-	assign w_tx6_data = {r_counter_tx,3'd6};
-	assign w_tx7_data = {r_counter_tx,3'd7};
+	
+	assign w_tx0_data = w_tx_data[ 7: 0];
+	assign w_tx1_data = w_tx_data[15: 8];
+	assign w_tx2_data = w_tx_data[23:16];
+	assign w_tx3_data = w_tx_data[31:24];
+	assign w_tx4_data = w_tx_data[39:32];
+	assign w_tx5_data = w_tx_data[47:40];
+	assign w_tx6_data = w_tx_data[55:48];
+	assign w_tx7_data = w_tx_data[63:56];
 	
 	
 	assign w_xgmii_tx_dc_0 = {
-		w_tx7_data,w_tx_en[7],
-		w_tx6_data,w_tx_en[6],
-		w_tx5_data,w_tx_en[5],
-		w_tx4_data,w_tx_en[4],
-		w_tx3_data,w_tx_en[3],
-		w_tx2_data,w_tx_en[2],
-		w_tx1_data,w_tx_en[1],
-		w_tx0_data,w_tx_en[0]
+		w_tx_en[7],w_tx7_data,
+		w_tx_en[6],w_tx6_data,
+		w_tx_en[5],w_tx5_data,
+		w_tx_en[4],w_tx4_data,
+		w_tx_en[3],w_tx3_data,
+		w_tx_en[2],w_tx2_data,
+		w_tx_en[1],w_tx1_data,
+		w_tx_en[0],w_tx0_data
 	};
 	
 	// SFP+ RX
@@ -341,6 +323,22 @@ output      sfp_tx_p1,
 	assign w_rx_en[1] = w_xgmii_rx_dc_0[17];
 	assign w_rx_en[0] = w_xgmii_rx_dc_0[8];	
 		
+	reg [31:0] r_clkcnt2;
+	wire[15:0] freq_xgmii_rx_clk;
+	always @(posedge xgmii_rx_clk) begin
+		if(r_clkcnt2==32'd0)begin
+			r_clkcnt2 <= 156.25*1000*1000-1;
+		end else begin
+			r_clkcnt2 <= r_clkcnt2-1'b1;
+		end
+	end
+	assign user1_led_r[2] = (r_clkcnt2[31:16]==32'd0) ? 1'b0 : 1'b1;
+	clkmon #(.P_CLK_FREQ(FREQ_50MHZ), .P_MON_UNIT(UNIT_1MHZ)) u_clkmon_xgmii_rx (
+		.CLK     (clkina_50),
+		.RESET   (~reset_n ),
+		.MON_CLK (xgmii_rx_clk      ),
+		.MON_FREQ(freq_xgmii_rx_clk )
+	);
 	
 	// SFP+ Status
 	wire        w_pll_locked;
@@ -348,6 +346,24 @@ output      sfp_tx_p1,
 	wire        rx_recovered_clk;        //
 	
 	assign pll_ref_clk = refclk4_a_ql2_p;
+   assign user1_led_r[0] = w_pll_locked;
+
+	reg [31:0] r_clkcnt3;
+	wire[15:0] freq_rx_recovered_clk;
+	always @(posedge rx_recovered_clk) begin
+		if(r_clkcnt3==32'd0)begin
+			r_clkcnt3 <= 156.25*1000*1000-1;
+		end else begin
+			r_clkcnt3 <= r_clkcnt3-1'b1;
+		end
+	end
+	assign user1_led_r[3] = (r_clkcnt3[31:16]==32'd0) ? 1'b0 : 1'b1;
+	clkmon #(.P_CLK_FREQ(FREQ_50MHZ), .P_MON_UNIT(UNIT_1MHZ)) u_clkmon_rx_recovered (
+		.CLK     (clkina_50),
+		.RESET   (~reset_n ),
+		.MON_CLK (rx_recovered_clk      ),
+		.MON_FREQ(freq_rx_recovered_clk )
+	);
 	
 	// Avalon-MM
 	wire        phy_mgmt_clk;            // 37.5-50MHz
@@ -360,12 +376,29 @@ output      sfp_tx_p1,
 	wire        w_phy_mgmt_waitrequest;
 	
 	assign phy_mgmt_clk         = clkina_50; // 50MHz
-	assign phy_mgmt_clk_reset   = 1'b0;
-	assign w_phy_mgmt_address   = 9'd0;
-	assign w_phy_mgmt_read      = 1'b0;
-	assign w_phy_mgmt_write     = 1'b0;
-	assign w_phy_mgmt_writedata = 32'h0000_0000;
+	assign phy_mgmt_clk_reset   = ~reset_n;
+	//assign w_phy_mgmt_address   = 9'd0;
+	//assign w_phy_mgmt_read      = 1'b0;
+	//assign w_phy_mgmt_write     = 1'b0;
+	//assign w_phy_mgmt_writedata = 32'h0000_0000;
 
+	reg [31:0] r_clkcnt4;
+	wire[15:0] freq_phy_mgmt_clk;
+	always @(posedge phy_mgmt_clk) begin
+		if(r_clkcnt4==32'd0)begin
+			r_clkcnt4 <= 50*1000*1000-1;
+		end else begin
+			r_clkcnt4 <= r_clkcnt4-1'b1;
+		end
+	end
+	assign user1_led_r[4] = (r_clkcnt4[31:16]==32'd0) ? 1'b0 : 1'b1;
+	clkmon #(.P_CLK_FREQ(FREQ_50MHZ), .P_MON_UNIT(UNIT_1MHZ)) u_clkmon_phy_mgmt (
+		.CLK     (clkina_50),
+		.RESET   (~reset_n ),
+		.MON_CLK (phy_mgmt_clk      ),
+		.MON_FREQ(freq_phy_mgmt_clk )
+	);
+	
 	// Transceiver Reconfiguration Controller
 	wire        mgmt_clk_clk;
 	wire        mgmt_rst_reset;
@@ -377,11 +410,28 @@ output      sfp_tx_p1,
 	wire [31:0] w_reconfig_mgmt_writedata;
 
 	assign mgmt_clk_clk              = clkina_50;
-	assign mgmt_rst_reset            = 1'b0;
-	assign w_reconfig_mgmt_address   = 7'd0;
-	assign w_reconfig_mgmt_read      = 1'b0;
-	assign w_reconfig_mgmt_write     = 1'b0;
-	assign w_reconfig_mgmt_writedata = 32'h0000_0000;
+	assign mgmt_rst_reset            = ~reset_n;
+	//assign w_reconfig_mgmt_address   = 7'd0;
+	//assign w_reconfig_mgmt_read      = 1'b0;
+	//assign w_reconfig_mgmt_write     = 1'b0;
+	//assign w_reconfig_mgmt_writedata = 32'h0000_0000;
+	
+	reg [31:0] r_clkcnt5;
+	wire[15:0] freq_mgmt_clk_clk;
+	always @(posedge mgmt_clk_clk) begin
+		if(r_clkcnt5==32'd0)begin
+			r_clkcnt5 <= 50*1000*1000-1;
+		end else begin
+			r_clkcnt5 <= r_clkcnt5-1'b1;
+		end
+	end
+	assign user1_led_r[5] = (r_clkcnt5[31:16]==32'd0) ? 1'b0 : 1'b1;
+	clkmon #(.P_CLK_FREQ(FREQ_50MHZ), .P_MON_UNIT(UNIT_1MHZ)) u_clkmon_mgmt_clk (
+		.CLK     (clkina_50),
+		.RESET   (~reset_n ),
+		.MON_CLK (mgmt_clk_clk      ),
+		.MON_FREQ(freq_mgmt_clk_clk )
+	);
 	
 	// Reconfiguration I/F
 	wire [91:0]  w_reconfig_from_xcvr;
@@ -439,5 +489,39 @@ output      sfp_tx_p1,
 		.reconfig_from_xcvr        (w_reconfig_from_xcvr        ), // input  wire [91:0]  reconfig_from_xcvr.reconfig_from_xcvr
 	);
 
-	 
+	wire[7:0] w_led_export;
+	
+	systop u0 (
+		.clk50m_clk                (clkina_50),                   //        clk50m.clk
+		.reset_reset_n             (reset_n),                     //         reset.reset_n
+		.led_export                (w_led_export),                //           led.export
+		.reconfig_mgmt_address     (w_reconfig_mgmt_address),     // reconfig_mgmt.address
+		.reconfig_mgmt_write       (w_reconfig_mgmt_write),       //              .write
+		.reconfig_mgmt_read        (w_reconfig_mgmt_read),        //              .read
+		.reconfig_mgmt_readdata    (w_reconfig_mgmt_readdata),    //              .readdata
+		.reconfig_mgmt_writedata   (w_reconfig_mgmt_writedata),   //              .writedata
+		.reconfig_mgmt_waitrequest (w_reconfig_mgmt_waitrequest), //              .waitrequest
+		.phy_mgmt_address          (w_phy_mgmt_address),          //      phy_mgmt.address
+		.phy_mgmt_write            (w_phy_mgmt_write),            //              .write
+		.phy_mgmt_read             (w_phy_mgmt_read),             //              .read
+		.phy_mgmt_readdata         (w_phy_mgmt_readdata),         //              .readdata
+		.phy_mgmt_writedata        (w_phy_mgmt_writedata),        //              .writedata
+		.phy_mgmt_waitrequest      (w_phy_mgmt_waitrequest)       //              .waitrequest
+	);
+	
+	// LED
+   assign user1_led_g[5:0] = w_led_export[5:0];
+	
+	// 刺さってれば緑
+	assign user1_led_r[6]  = ~sfp_mod_abs[1];
+	assign user1_led_r[7]  = ~sfp_mod_abs[2];
+	assign user1_led_g[6]  =  sfp_mod_abs[1];
+	assign user1_led_g[7]  =  sfp_mod_abs[2];  
+	
+	// SFP+モジュール設定
+	assign sfp_tx_dis[1]   = 1'b0; // SFP+ J10
+	assign sfp_tx_dis[2]   = 1'b0; // SFP+ J15
+	assign sfp_tx_rs0[2:1] = 2'bzz; // SFP+ Rx rate (3.3V PullUp)
+	assign sfp_tx_rs1[2:1] = 2'bzz; // SFP+ Tx rate (3.3V PullUp)
+	
 endmodule
